@@ -1,0 +1,100 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+body {
+    background-color: #9c8cd4 ;
+    font-family: Helvetica, Sans-Serif;
+}
+
+.container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+.card-body h4 {
+    font-size: 15pt;
+    color: white;
+    font-weight: bold;
+    margin-top: -8px;
+    margin-bottom: 3px;
+}
+
+.card-body p {
+    color: #e7e0fd;
+    font-size: 11pt;
+
+}
+
+.topnav {
+    background-color: #9c8cd4;
+    padding: 3%;
+}
+
+.card {
+    background-color: #9c8cd4 /*#e6dfff;*/
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.btn{
+    background-color: #e6dfff;
+    border: none;
+    color: rgb(60, 59, 59);
+}
+
+.btn:focus,
+.btn.focus {
+    box-shadow: 0 0 0 .2rem #c8baff;
+}
+
+.btn:hover {
+    background-color: #c8baff;
+    color: rgb(60, 59, 59);
+    transition: 1s;
+}
+
+.resultHolder {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.error {
+    font-size: 17px;
+    color: rgb(160, 20, 20);
+    text-align: center;
+    border-radius: 5px;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+#classTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#classTable td, #classTable th {
+    border: 1px solid #ddd;
+    padding: 2px;
+    text-align: center;
+    background-color: #f7f4ff;
+    font-size: 11pt;
+
+}
+
+#classTable th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #e6dfff;
+    color: rgb(60, 59, 59);
+}
