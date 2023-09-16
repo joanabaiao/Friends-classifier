@@ -13,164 +13,154 @@
 
 <body>
 
-    <div class="topnav">
-        <img src="./actors_images/Friends-Logo.png" alt="Friends-Logo" class="center">
-    </div>
+    <header>
+        <div class="topnav">
+            <img src="./actors_images/Friends-Logo.png" alt="Friends-Logo" class="friends-logo">
+        </div>
+    </header>
 
-    <div class="container">
-        <div class="row">
+    <main class='max-width'>
 
-            <div class="col card-wrapper" data-actor="Jennifer_Aniston">
-                <div class="card border-0">
-                    <div class="position-relative overflow-hidden mx-auto">
-                        <img class="w-100 h-100" src="./actors_images/Imagem1.png" alt="Card image cap">
-                    </div>
-                    <div class="card-body text-center">
-                        <h4 class="text-uppercase card-title">Rachel</h4>
-                        <p>Jennifer Aniston</p>
-                        </p>
-                    </div>
+        <div class="photos-container">
+
+            <div class="actor-info" data-actor="Jennifer_Aniston">
+                <img class="actor-photo" src="./actors_images/Imagem1.png" alt="Card image cap">
+                <div class="actor-text">
+                    <h4>Rachel</h4>
+                    <p>Jennifer Aniston</p>
+                    </p>
                 </div>
             </div>
 
-            <div class="col card-wrapper" data-actor="David_Schwimmer">
-                <div class="card border-0">
-                    <div class="position-relative overflow-hidden mx-auto">
-                        <img class="w-100 h-100" src="./actors_images/Imagem4.png" alt="Card image cap">
-                    </div>
-                    <div class="card-body text-center">
-                        <h4 class="text-uppercase card-title">Ross</h4>
-                        <p>David Schwimmer</p>
-                        </p>
-                    </div>
+            <div class="actor-info" data-actor="David_Schwimmer">
+                <img class="actor-photo" src="./actors_images/Imagem4.png" alt="Card image cap">
+                <div class="actor-text">
+                    <h4>Ross</h4>
+                    <p>David Schwimmer</p>
+                    </p>
                 </div>
             </div>
 
-            <div class="col card-wrapper" data-actor="Lisa_Kudrow">
-                <div class="card border-0">
-                    <div class="position-relative overflow-hidden mx-auto">
-                        <img class="w-100 h-100" src="./actors_images/Imagem2.png" alt="Card image cap">
-                    </div>
-                    <div class="card-body text-center">
-                        <h4 class="text-uppercase card-title">Phoebe</h4>
-                        <p>Lisa Kudrow</p>
-                        </p>
-                    </div>
+            <div class="actor-info" data-actor="Lisa_Kudrow">
+                <img class="actor-photo" src="./actors_images/Imagem2.png" alt="Card image cap">
+                <div class="actor-text">
+                    <h4>Phoebe</h4>
+                    <p>Lisa Kudrow</p>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="actor-info" data-actor="Matthew_Perry">
+                <img class="actor-photo" src="./actors_images/Imagem5.png" alt="Card image cap">
+                <div class="actor-text">
+                    <h4>Chandler</h4>
+                    <p>Matthew Perry</p>
+                    </p>
                 </div>
             </div>
 
-            <div class="col card-wrapper" data-actor="Matthew_Perry">
-                <div class="card border-0">
-                    <div class="position-relative overflow-hidden mx-auto">
-                        <img class="w-100 h-100" src="./actors_images/Imagem5.png" alt="Card image cap">
-                    </div>
-                    <div class="card-body text-center">
-                        <h4 class="text-uppercase card-title">Chandler</h4>
-                        <p>Matthew Perry</p>
-                        </p>
-                    </div>
+            <div class="actor-info" data-actor="Courteney_Cox">
+                <img class="actor-photo" src="./actors_images/Imagem3.png" alt="Card image cap">
+                <div class="actor-text">
+                    <h4>Monica</h4>
+                    <p>Courteney Cox</p>
+                    </p>
                 </div>
             </div>
 
-            <div class="col card-wrapper" data-actor="Courteney_Cox">
-                <div class="card border-0">
-                    <div class="position-relative overflow-hidden mx-auto">
-                        <img class="w-100 h-100" src="./actors_images/Imagem3.png" alt="Card image cap">
-                    </div>
-                    <div class="card-body text-center">
-                        <h4 class="text-uppercase card-title">Monica</h4>
-                        <p>Courteney Cox</p>
-                        </p>
-                    </div>
+            <div class="actor-info" data-actor="Matt_LeBlanc">
+                <img class="actor-photo" src="./actors_images/Imagem6.png" alt="Card image cap">
+                <div class="actor-text">
+                    <h4>Joey</h4>
+                    <p>Matt LeBlanc</p>
+                    </p>
                 </div>
             </div>
-
-            <div class="col card-wrapper" data-actor="Matt_LeBlanc">
-                <div class="card border-0">
-                    <div class="position-relative overflow-hidden mx-auto">
-                        <img class="w-100 h-100" src="./actors_images/Imagem6.png" alt="Card image cap">
-                    </div>
-                    <div class="card-body text-center">
-                        <h4 class="text-uppercase card-title">Joey</h4>
-                        <p>Matt LeBlanc</p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        
         </div>
 
-        <div class="row">
+        <div class="classification-container">
 
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-12 mx-auto">
-                        <form action="/file-upload" class="dropzone" id="dropzone">
-                            <div class="dz-message needsclick">
-                                <img src="./style/upload.png" width="50vw" height="50vw"><br>
-                                <span class="note needsclick">Drop files here or click to upload</span>
-                            </div>
-                        </form>
+            <div class="drop-container">
+                <form action="/file-upload" class="dropzone" id="dropzone">
+                    <div class="dz-message needsclick">
+                        <img src="./style/upload.png" width="50vw" height="50vw"><br>
+                        <span class="note needsclick">Drop files here or click to upload</span>
                     </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-3 mx-auto">
-                        <button id="submitBtn" type="button" class="btn">Classify</button>
-                    </div>
+                </form>
+
+                <div class="">
+                    <button id="submitBtn" type="button" class="btn classify-button">Classify</button>
                 </div>
             </div>
 
-            <div class="col-sm-8 error" id="error" >
-                <p>Can't classify image! Classifier was not able to detect face and two eyes properly</p>    
+            <div class="results-container">
+
+                <h4>Results</h4>
+
+                <div>
+                    <div class="error" id="error">
+                        <p>Can't classify image!</p>
+                        <p>Classifier was not able to detect face and two eyes properly.</p>
+                    </div>
+
+                    <div class="results">
+
+                        <div class="results-photo" id="resultHolder">
+                        </div>
+
+                        <div class="results-table" id="divClassTable">
+                            <table id="classTable">
+                                <tr>
+                                    <th>CHARACTER</th>
+                                    <th>PROBABILITY SCORE</th>
+                                </tr>
+                                <tr>
+                                    <!-- <td>Jennifer Aniston</td> -->
+                                    <td>Rachel</td>
+                                    <td id="score_Jennifer_Aniston"></td>
+                                </tr>
+                                <tr>
+                                    <!-- <td>David Schwimmer</td> -->
+                                    <td>Ross</td>
+                                    <td id="score_David_Schwimmer"></td>
+                                </tr>
+                                <tr>
+                                    <!-- <td>Lisa Kudrow</td> -->
+                                    <td>Phoebe</td>
+                                    <td id="score_Lisa_Kudrow"></td>
+                                </tr>
+                                <tr>
+                                    <!-- <td>Matthew Perry</td> -->
+                                    <td>Chandler</td>
+                                    <td id="score_Matthew_Perry"></td>
+                                </tr>
+                                <tr>
+                                    <!-- <td>Courteney Cox</td> -->
+                                    <td>Monica</td>
+                                    <td id="score_Courteney_Cox"></td>
+                                </tr>
+                                <tr>
+                                    <!-- <td>Matt LeBlanc</td> -->
+                                    <td>Joey</td>
+                                    <td id="score_Matt_LeBlanc"></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="col-sm-4 resultHolder" id="resultHolder">
-            </div>
 
-            <div class="col-sm-4" id="divClassTable">
-                <table id="classTable">
-                        <tr>
-                            <th>CHARACTER</th>
-                            <th>PROBABILITY SCORE</th>
-                        </tr>
-                        <tr>
-                            <!-- <td>Jennifer Aniston</td> -->
-                            <td>Rachel</td>
-                            <td id="score_Jennifer_Aniston"></td>
-                        </tr>
-                        <tr>
-                            <!-- <td>David Schwimmer</td> -->
-                            <td>Ross</td>
-                            <td id="score_David_Schwimmer"></td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Lisa Kudrow</td> -->
-                            <td>Phoebe</td>
-                            <td id="score_Lisa_Kudrow"></td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Matthew Perry</td> -->
-                            <td>Chandler</td>
-                            <td id="score_Matthew_Perry"></td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Courteney Cox</td> -->
-                            <td>Monica</td>
-                            <td id="score_Courteney_Cox"></td>
-                        </tr>
-                        <tr>
-                            <!-- <td>Matt LeBlanc</td> -->
-                            <td>Joey</td>
-                            <td id="score_Matt_LeBlanc"></td>
-                        </tr>
-                </table>
-            </div>
-            
+
+
         </div>
 
-            
-    </div>
 
+    </main>
 
 </body>
 

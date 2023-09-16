@@ -16,13 +16,13 @@ def load_model():
     global dict_name
     global dict_number
 
-    with open("./final_model/class_dictionary.json", "r") as file:
+    with open("./server/final_model/class_dictionary.json", "r") as file:
         dict_name = json.load(file)
         dict_number = {v:k for k,v in dict_name.items()}
 
     global final_model
     if final_model is None:
-        with open('./final_model/best_model.pkl', 'rb') as file:
+        with open('./server/final_model/best_model.pkl', 'rb') as file:
             final_model = pickle.load(file)
 
     print("Done!")
@@ -36,8 +36,8 @@ def get_base64(b64str):
     return img
 
 # ------------------ DETECT FACE AND EYES ------------------
-face_cascade = cv2.CascadeClassifier('./opencv/haarcascades/haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier('./opencv/haarcascades/haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier('./server/opencv/haarcascades/haarcascade_frontalface_default.xml')
+eye_cascade = cv2.CascadeClassifier('./server/opencv/haarcascades/haarcascade_eye.xml')
 
 def get_cropped_image_if_2_eyes(image_path, image_b64):
 
@@ -123,7 +123,7 @@ if __name__ == '__main__':
     image_b64 = True
     
     if image_b64 is True:
-        with open("./test_images/b64_courteney.txt") as file:
+        with open("./server/test_images/b64_courteney.txt") as file:
             image_b64 = file.read()
 
     result = classify_image(image_b64, image_path)

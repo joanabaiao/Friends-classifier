@@ -12,7 +12,7 @@ def classify_image():
     response = classifier.classify_image(image_data, None)
     response = jsonify(response)
     response.headers.add('Access-Control-Allow-Origin', '*')
-
+ 
     return response
 
 if __name__ == "__main__":

@@ -1,85 +1,180 @@
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+html {
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+    text-size-adjust: 100%;
+    background: #9c8cd4;
+    overflow-y: scroll;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
-    background-color: #9c8cd4 ;
+    background-color: #9c8cd4;
+    line-height: 1;
+    color: rgb(45, 45, 45);
+    letter-spacing: -.001em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    height: 100vh;
     font-family: Helvetica, Sans-Serif;
 }
 
-.container {
-    width: 100%;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: auto;
+main {
+    flex: 1 0 auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+}
+
+/* ---- LARGURA DO ECRÃ ---- */
+.max-width {
+    max-width: 1500px;
+    width: 90%;
+}
+
+.friends-logo{
+    display: block;
     margin-left: auto;
-  }
+    margin-right: auto;
+    width: 450px;
+    padding-top: 20px;
+}
 
+.photos-container {
+    padding-top: 10px; 
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+}
 
-.card-body h4 {
+.actor-info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.actor-photo{
+    width: 160px;
+}
+
+.actor-text h4 {
     font-size: 15pt;
     color: white;
     font-weight: bold;
-    margin-top: -8px;
-    margin-bottom: 3px;
+    padding-top: 5px;
+    text-transform: uppercase; 
+    text-align: center; 
 }
 
-.card-body p {
-    color: #e7e0fd;
+.actor-text p {
+    color: white;
     font-size: 11pt;
-
+    text-align: center; 
 }
 
-.topnav {
-    background-color: #9c8cd4;
-    padding: 3%;
+.classification-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-evenly;
+    width: 90%;
+    padding-bottom: 60px;
 }
 
-.card {
-    background-color: #9c8cd4 /*#e6dfff;*/
+.drop-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px; 
 }
 
-.container {
-    margin-top: 20px;
+.dropzone{
+    height: 200px;
+    background-color: red;
 }
 
-.btn{
+.classify-button {
     background-color: #e6dfff;
     border: none;
     color: rgb(60, 59, 59);
+    margin-top: 10px;
 }
 
-.btn:focus,
-.btn.focus {
+.classify-button:focus {
     box-shadow: 0 0 0 .2rem #c8baff;
 }
 
-.btn:hover {
-    background-color: #c8baff;
+.classify-button:hover {
+    background-color: #cdc0ff;
     color: rgb(60, 59, 59);
     transition: 1s;
 }
 
-.resultHolder {
-    padding-right: 10%;
-    padding-left: 10%;
+.results-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    min-height: 200px; 
+    min-width: 500px; 
+    width: 60%;
+    align-items: top;
+    text-align: center;
+    background-color: #c3b3fc;
+}
+
+.results-container h4 {
+    font-size: 15pt;
+    color: white;
+    font-weight: bold;
+    padding-top: 5px;
+    text-transform: uppercase; 
+    text-align: center; 
+    padding-top: 10px;
+}
+
+.results {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-evenly;
 }
 
 .error {
-    font-size: 17px;
-    color: rgb(160, 20, 20);
+    align-items: center;
     text-align: center;
-    border-radius: 5px;
-    vertical-align: middle;
-    justify-content: center;
+    margin-top: 20px;
+    color: rgb(160, 20, 20);
+}
+
+.results-photo {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.results-table {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    min-width: 200px;
+    width: 60%;
 }
 
 #classTable {
     border-collapse: collapse;
     width: 100%;
+    height: 200px;
 }
 
 #classTable td, #classTable th {
@@ -87,8 +182,6 @@ body {
     padding: 2px;
     text-align: center;
     background-color: #f7f4ff;
-    font-size: 11pt;
-
 }
 
 #classTable th {
